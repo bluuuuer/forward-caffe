@@ -22,8 +22,6 @@
 	|___eigen/          eigen math lib
 	|___res/            test resources
 	|___test/           test folder
-	|	|___CMakeList.txt
-	|	|___l2norm_test.cpp
 	|___CmakeLists.txt			
 	|___classification.sh  test script
 	|___README          :)
