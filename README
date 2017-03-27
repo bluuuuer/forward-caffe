@@ -25,7 +25,7 @@
 	|	|___CMakeList.txt
 	|	|___l2norm_test.cpp
 	|___CmakeLists.txt			
-	|___l2norm_test.sh  test script
+	|___classification.sh  test script
 	|___README          :)
 
 - Layers completed on CPU Mode
