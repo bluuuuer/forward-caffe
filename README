@@ -3,30 +3,30 @@
 
 - struct
 	|___cmake/          CMake files
-	|___src/			forward-caffe source files
-	|	|___layers/			layers source files
-	|	|___proto/			protobuf  cc file & proto file
-	|	|___util/			math, io, etc. 
-	|	|___*.cpp			key source files: net, layer, blob, etc.
+	|___src/            forward-caffe source files
+	|	|___layers/         layers source files
+	|	|___proto/          protobuf  cc file & proto file
+	|	|___util/           math, io, etc. 
+	|	|___*.cpp           key source files: net, layer, blob, etc.
 	|	|___CMakeLists.txt
-	|___include/		forward-caffe head files
-	|	|___google/			protobuf head files
-	|	|___opencv/			opencv head files
-	| 	|___proto/			protobuf head files 
-	|	|___layers/			layers head files
+	|___include/        forward-caffe head files
+	|	|___google/         protobuf head files
+	|	|___opencv/         opencv head files
+	| 	|___proto/          protobuf head files 
+	|	|___layers/         layers head files
 	|	|___util/
 	|	|___*.h
-	|___lib/			forward-caffe relied files
+	|___lib/            forward-caffe relied files
 	|	|___opencv/
 	|	|___protobuf/
-	|___eigen/			eigen 
-	|___res/			test resources
-	|___test/			test folder
+	|___eigen/          eigen math lib
+	|___res/            test resources
+	|___test/           test folder
 	|	|___CMakeList.txt
 	|	|___l2norm_test.cpp
 	|___CmakeLists.txt			
-	|___l2norm_test.sh	test script
-	|___readme.txt		:)
+	|___l2norm_test.sh  test script
+	|___README          :)
 
 - Layers completed on CPU Mode
 	- Accuracy
