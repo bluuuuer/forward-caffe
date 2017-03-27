@@ -1,0 +1,5 @@
+#define SOURCE_FLODER "${PROJECT_SOURCE_DIR}"
+
+#define BINARY_FOLDER "${PROJECT_BINARY_DIR}"
+
+#cmakedefine CPU_ONLY

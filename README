@@ -1,0 +1,92 @@
+- This is a forward DCNN program, which is compatibility with caffe's caffemodel file,
+  with both CPU and GPU mode.
+
+- 文件结构如下
+	|___cmake/                  CMake files
+	|___src/					forward-caffe source files
+	|	|___layers/						layers source files
+	|	|___proto/						protobuf  cc file & proto file
+	|	|___util/						math, io, etc. 
+	|	|___*.cpp						some key source files: net, layer, blob, etc.
+	|	|___CMakeLists.txt
+	|___include/				forward-caffe head files
+	|	|___google/						protobuf head files
+	|	|___opencv/						opencv head files
+	| 	|___proto/						protobuf head files 
+	|	|___layers/						layers head files
+	|	|___util/
+	|	|___*.h
+	|___lib/					forward-caffe relied files
+	|	|___opencv/
+	|	|___protobuf/
+	|___eigen/					eigen 
+	|___res/					test resources
+	|___test/					test folder
+	|	|___CMakeList.txt
+	|	|___l2norm_test.cpp
+	|___CmakeLists.txt			
+	|___l2norm_test.sh			test script
+	|___readme.txt				:)
+
+- Layers completed on CPU Mode
+	- Accuracy
+	- Argmax
+	- BatchNorm
+	- BatchReindex
+	- Bias
+	- Concat
+	- Convolution
+	- Crop
+	- Deconvolution
+	- Dropout
+	- Eltwise
+	- Embed 
+	- Filter
+	- Flatten
+	- Im2col
+	- InnerProduct
+	- Input
+	- L2Norm
+	- LRN
+	- MVN
+	- Pooling
+	- Power
+	- PReLU
+	- ReLU
+	- Reshape
+	- Scale
+	- Silence
+	- Slice
+	- Softmax
+	- Split
+	- SPP
+	- Tilei
+
+- Layers completed on GPU Mode
+	- Concat
+	- Convolution
+	- Dropout
+	- InnerProduct
+	- L2Norm
+	- LRN
+	- Pooling
+	- PReLU
+	- ReLU
+	- Silence
+	- Softmax
+
+- How to install:
+	- Requirements:
+		- Cmake 2.8 +
+		- gcc/g++ 4.8.4 +
+	- How to switch between with CPU and GPU mode 
+		- CPU: forward-caffe/CMakeLists.txt line 9 
+			option(CPU_ONLY "Build Jaffe without CUDA support" ON)
+		- GPU: forward-caffe/CMakeLists.txt line 9 
+			option(CPU_ONLY "Build Jaffe without CUDA support" OFF)
+	- install:
+		- cd forward-caffe
+		- mkdir build
+		- cd build
+		- cmake ..
+		- make -j8 or make -j4
