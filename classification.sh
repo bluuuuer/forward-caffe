@@ -3,7 +3,7 @@
 clear
 cd build
 echo "make ..."
-make -j16
+make -j8
 cd ..
 echo "Run build/bin/classification_test ..."
 for ((i = 0; i < 10; i++));

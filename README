@@ -88,3 +88,11 @@
 		- cd build
 		- cmake ..
 		- make -j8 or make -j4
+
+- Use classification test script:
+	- If you want to run classification.sh, you should download the caffemodel by
+	  yourself, which is bvlc_reference_caffenet.caffemodel. And place it in folder 
+	  /res/classification/.
+	- When you done preparing the caffemodel file, edit classification.sh to make
+	  sure that you are going to use the right gpu.(Keeping the gpu_id parameter is 
+      OK when running under CPU mode). 
